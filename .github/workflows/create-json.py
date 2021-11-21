@@ -7,7 +7,7 @@ hex_color_re = re.compile("Hex Color: (\#[.*]{6})")
 
 app_list = {}
 
-print(os.listdir("/apps/"))
+print(os.listdir("apps"))
 for item in os.listdir("apps"):
   with f.open(item, os.path.join("apps", item)) as file:
     app_name = app_name_re.search(file.readline()).group(0)
