@@ -3,7 +3,7 @@ import re
 
 app_name_re = re.compile("App Name: (.*)")
 package_name_re = re.compile("Package Name: (.*)")
-hex_color_re = re.compile("Hex Color: (#.*{6})")
+hex_color_re = re.compile("Hex Color: (\#[.*]{6})")
 
 app_list = {}
 
