@@ -21,5 +21,5 @@ if invalid_files:
   raise Exception(f"The following apps have an invalid format.\n"+"\n".join(invalid_files))
 else:
   print(json.dumps([app_list]))
-  with open("colors.json", "r") as file:
+  with open("colors.json", "w") as file:
     file.write(json.dumps([app_list]))
