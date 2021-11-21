@@ -12,6 +12,6 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v2.3.0
         with:
-          python-version: 3.10
+          python-version: 3.10.0
       - name: Run Python Script
         run: python ./.github/workflows/create-json.py
