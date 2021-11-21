@@ -11,7 +11,7 @@ for item in os.listdir("apps"):
       package_name = re.search("Package Name: (.*)", file.readline()).group(1)
       hex_color = re.search("Hex Color: (\#.{6})", file.readline()).group(1)
     except Exception as e:
-      raise f"{item} has invalid format"
+      raise Exception(f"{item} has invalid format") from e
     
     print(app_name)
     print(package_name)
