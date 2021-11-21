@@ -1,0 +1,17 @@
+name: JSON File Creation
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Python
+        uses: actions/setup-python@v2.3.0
+        with:
+          python-version: 3.10
+      - name: Run Python Script
+        run: python ./.github/workflows/create-json.py
