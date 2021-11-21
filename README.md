@@ -23,7 +23,7 @@ Package Name: app.package.name
 Hex Color: #FFFFFF
 ```
 Incorrect markup with mark it as invalid by an automated script. Make sure that the hex color has the format of #RRGGBB. No alphas.
-### Create a commit request
+### Create a pull request
 If the format is followed, then we will commit your changes to the database.
 
 # License
