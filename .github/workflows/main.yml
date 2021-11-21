@@ -17,3 +17,6 @@ jobs:
       - name: Run Python Script
         run: python ./.github/workflows/create-json.py
       - uses: EndBug/add-and-commit@v7
+        with:
+          author_name: GitHub Actions
+          message: Updated colors.json
