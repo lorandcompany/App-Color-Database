@@ -8,8 +8,8 @@ hex_color_re = re.compile("Hex Color: (\#[.*]{6})")
 app_list = {}
 
 print(os.listdir("/apps/"))
-for item in os.listdir("/apps/"):
-  with f.open(item, "r") as file:
+for item in os.listdir("apps"):
+  with f.open(item, os.path.join("apps", item)) as file:
     app_name = app_name_re.search(file.readline()).group(0)
     package_name = package_name_re.search(file.readline()).group(0)
     hex_color = hex_color_re.search(file.readline()).group(0)
