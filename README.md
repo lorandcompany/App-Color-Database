@@ -2,6 +2,15 @@
 
 This repository is a database of app icon colors mainly for use in colorizing notification icons using package names. Based from a [spreadsheet](https://docs.google.com/spreadsheets/d/15xYugLWZIDaVFRkaC9wsctFhGOfjqi4fQngwIjdXVUE/view) made by [Erik Bucik](https://klwp.erikbucik.com/)
 
+# Usage
+
+Use `wg()` function to fetch the `colors.json` file and use JsonPath to find the hex color by package name.
+
+### Example
+
+```
+$tc(reg,wg("https://raw.githubusercontent.com/lorandcompany/App-Color-Database/main/colors.json", json, ".[" + your_package_name + "]"), "^$", [custom color if not found])$
+```
 
 # Contributing
 
