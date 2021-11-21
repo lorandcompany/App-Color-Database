@@ -1,11 +1,13 @@
 import os
 import re
+import json
 
 app_list = {}
 
+packages = []
+
 invalid_files = []
 
-print(os.listdir("apps"))
 for item in os.listdir("apps"):
   with open(os.path.join("apps", item), "r") as file:
     try:
@@ -17,3 +19,7 @@ for item in os.listdir("apps"):
 
 if invalid_files:
   raise Exception(f"The following apps have an invalid format.\n"+"\n".join(invalid_files))
+else:
+  print(json.dumps([app_list]))
+  with open("colors.json", "r") as file:
+    file.write(json.dumps([app_list]))
