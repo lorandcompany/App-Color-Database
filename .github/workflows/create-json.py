@@ -9,7 +9,7 @@ app_list = {}
 
 print(os.listdir("apps"))
 for item in os.listdir("apps"):
-  with open(item, os.path.join("apps", item)) as file:
+  with open(os.path.join("apps", item), "r") as file:
     app_name = app_name_re.search(file.readline()).group(0)
     package_name = package_name_re.search(file.readline()).group(0)
     hex_color = hex_color_re.search(file.readline()).group(0)
