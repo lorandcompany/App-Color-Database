@@ -3,6 +3,8 @@ import re
 
 app_list = {}
 
+invalid_files = []
+
 print(os.listdir("apps"))
 for item in os.listdir("apps"):
   with open(os.path.join("apps", item), "r") as file:
@@ -11,8 +13,7 @@ for item in os.listdir("apps"):
       package_name = re.search("Package Name: (.*)", file.readline()).group(1)
       hex_color = re.search("Hex Color: (\#.{6})", file.readline()).group(1)
     except Exception as e:
-      raise Exception(f"{item} has invalid format") from e
-    
-    print(app_name)
-    print(package_name)
-    print(hex_color)
+      invalid_files.append(item)
+
+if invalid_files:
+  raise Exception(f"The following apps have an invalid format.\n"+"\n".join(invalid_files))
