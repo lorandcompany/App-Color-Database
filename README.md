@@ -27,7 +27,7 @@ Incorrect markup with mark it as invalid by an automated script. Make sure that 
 If the format is followed, then we will commit your changes to the database.
 
 # License
-This database follows the DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE contained in `#community-kode-database` inside the [official Kustom Discord server](https://discord.gg/Wk6uaKMpE3)
+This database is licensed under the Do What The Fuck You Want To Public License, like everything else contained in `#community-kode-database` inside the [official Kustom Discord server](https://discord.gg/Wk6uaKMpE3)
 ```
         DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
                     Version 2, December 2004 
