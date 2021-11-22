@@ -27,4 +27,4 @@ if invalid_files:
 else:
   print(json.dumps([app_list]))
   with open("colors.json", "w") as file:
-    file.write(json.dumps([app_list]))
+    file.write(json.dumps(app_list))
