@@ -14,7 +14,7 @@ $tc(reg,wg("https://raw.githubusercontent.com/lorandcompany/App-Color-Database/m
 
 # Contributing
 
-### Create a file inside `apps` directory. Name it closely related to the app.
+### Create a file inside [`apps`](https://github.com/lorandcompany/App-Color-Database/tree/main/apps) directory. Name it closely related to the app.
 The file name is meant to allow others to find existing apps easily. Name it something that someone would search. Like naming "Boost for Reddit" as `boost`. There's no need for file extensions.
 ### Follow the format given below.
 ```
